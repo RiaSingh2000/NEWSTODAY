@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommentsActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD COMMENT"
+        android:background="@color/orange_500"
+        android:textSize="30dp"
+        android:textColor="@color/overlay_light_90"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/rate"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/rate"/>
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/send" />
+    </RelativeLayout>
+
+    <RatingBar
+        android:id="@+id/bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/add"
+        android:visibility="invisible"
+        android:numStars="5"
+        android:stepSize="0.5"/>
+
+
+</LinearLayout>
